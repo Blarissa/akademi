@@ -1,13 +1,14 @@
 import { MenuProvider, SideBar } from "~/components/side-bar";
-import { Dashboard } from "~/components/dashboard";
+import { Outlet } from "react-router";
 
-
-export function Welcome() {
+export default function Welcome() {
   return (
     <div className="flex flex-row">
       <MenuProvider>
         <SideBar />
-        <Dashboard />
+        <main className="flex-1">
+          <Outlet />
+        </main>
       </MenuProvider>
     </div>
   );
