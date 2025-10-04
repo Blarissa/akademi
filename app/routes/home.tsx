@@ -1,13 +1,12 @@
-import type { Route } from "./+types/home";
-import { Welcome } from "../welcome/welcome";
+import Students from '../components/students';
 
-export function meta({}: Route.MetaArgs) {
+export function meta() {
   return [
-    { title: "Akademi" },
-    { name: "description", content: "Welcome to Akademi!" },
+    { title: "Akademi - Dashboard" },
+    { name: "description", content: "Painel principal do Akademi!" },
   ];
 }
 
 export default function Home() {
-  return <Welcome />;
+  return <Students />;
 }
