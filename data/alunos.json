@@ -1,0 +1,314 @@
+[
+    {
+        "name": "Samanta William", 
+        "id": "#123456789", 
+        "date": "March 25, 2021", 
+        "parent": "Mana William",
+        "city": "Jakarta", 
+        "contact": [
+            { "icon": "phone", "value": "08123456789" }, 
+            { "icon": "envelope", "value": "samanta@example.com" }
+        ],
+        "grade": "VII A"
+    },
+    {
+        "name": "Tony Soap", 
+        "id": "#123456789", 
+        "date": "March 25, 2021", 
+        "parent": "James Soap",
+        "city": "Jakarta", 
+        "contact": [
+            { "icon": "phone", "value": "08123456789" }, 
+            { "icon": "envelope", "value": "tony@example.com" }
+        ],
+        "grade": "VII B"
+    },
+    {
+        "name": "Karen Hope", 
+        "id": "#123456789", 
+        "date": "March 25, 2021", 
+        "parent": "Justin Hope",
+        "city": "Jakarta", 
+        "contact": [
+            { "icon": "phone", "value": "08123456789" }, 
+            { "icon": "envelope", "value": "karen@example.com" }
+        ],
+        "grade": "VII C"
+    },
+    {
+        "name": "Jordan Nico", 
+        "id": "#123456789", 
+        "date": "March 25, 2021", 
+        "parent": "Amanda Nico",
+        "city": "Jakarta", 
+        "contact": [
+            { "icon": "phone", "value": "08123456789" }, 
+            { "icon": "envelope", "value": "jordan@example.com" }
+        ],
+        "grade": "VII A"
+    },
+    {
+        "name": "Nadila Adja", 
+        "id": "#123456789", 
+        "date": "March 25, 2021", 
+        "parent": "Jack Adja",
+        "city": "Jakarta", 
+        "contact": [
+            { "icon": "phone", "value": "08123456789" }, 
+            { "icon": "envelope", "value": "nadila@example.com" }
+        ],
+        "grade": "VII A"
+    },
+    {
+        "name": "Johnny Ahmad", 
+        "id": "#123456789", 
+        "date": "March 25, 2021", 
+        "parent": "Danny Ahmad",
+        "city": "Jakarta", 
+        "contact": [
+            { "icon": "phone", "value": "08123456789" }, 
+            { "icon": "envelope", "value": "johnny@example.com" }
+        ],
+        "grade": "VII A"
+    },
+    {
+        "name": "Michael Carter", 
+        "id": "#789012345", 
+        "date": "April 12, 2021", 
+        "parent": "Sarah Carter",
+        "city": "Jakarta", 
+        "contact": [
+            { "icon": "phone", "value": "08987654321" }, 
+            { "icon": "envelope", "value": "michael@example.com" }
+        ],
+        "grade": "VII B"
+    },
+    {
+        "name": "Emily Rodriguez", 
+        "id": "#567890123", 
+        "date": "February 18, 2021", 
+        "parent": "Maria Rodriguez",
+        "city": "Jakarta", 
+        "contact": [
+            { "icon": "phone", "value": "08555123456" }, 
+            { "icon": "envelope", "value": "emily@example.com" }
+        ],
+        "grade": "VII C"
+    },
+    {
+        "name": "Daniel Park", 
+        "id": "#234567890", 
+        "date": "May 03, 2021", 
+        "parent": "Jin Park",
+        "city": "Jakarta", 
+        "contact": [
+            { "icon": "phone", "value": "08777889900" }, 
+            { "icon": "envelope", "value": "daniel@example.com" }
+        ],
+        "grade": "VII A"
+    },
+    {
+        "name": "Sophia Lee", 
+        "id": "#345678901", 
+        "date": "January 27, 2021", 
+        "parent": "David Lee",
+        "city": "Jakarta", 
+        "contact": [
+            { "icon": "phone", "value": "08111222333" }, 
+            { "icon": "envelope", "value": "sophia@example.com" }
+        ],
+        "grade": "VII B"
+    },
+    {
+        "name": "Lucas Wong", 
+        "id": "#456789012", 
+        "date": "June 14, 2021", 
+        "parent": "Anna Wong",
+        "city": "Jakarta", 
+        "contact": [
+            { "icon": "phone", "value": "08222333444" }, 
+            { "icon": "envelope", "value": "lucas@example.com" }
+        ],
+        "grade": "VII C"
+    },
+    {
+        "name": "Olivia Chen", 
+        "id": "#678901234", 
+        "date": "March 09, 2021", 
+        "parent": "Grace Chen",
+        "city": "Jakarta", 
+        "contact": [
+            { "icon": "phone", "value": "08333444555" }, 
+            { "icon": "envelope", "value": "olivia@example.com" }
+        ],
+        "grade": "VII A"
+    },
+    {
+        "name": "Ethan Ngo", 
+        "id": "#890123456", 
+        "date": "April 21, 2021", 
+        "parent": "Vincent Ngo",
+        "city": "Jakarta", 
+        "contact": [
+            { "icon": "phone", "value": "08444555666" }, 
+            { "icon": "envelope", "value": "ethan@example.com" }
+        ],
+        "grade": "VII B"
+    },
+    {
+        "name": "Ava Patel", 
+        "id": "#901234567", 
+        "date": "February 07, 2021", 
+        "parent": "Raj Patel",
+        "city": "Jakarta", 
+        "contact": [
+            { "icon": "phone", "value": "08555666777" }, 
+            { "icon": "envelope", "value": "ava@example.com" }
+        ],
+        "grade": "VII C"
+    },
+    {
+        "name": "Noah Garcia", 
+        "id": "#012345678", 
+        "date": "May 18, 2021", 
+        "parent": "Elena Garcia",
+        "city": "Jakarta", 
+        "contact": [
+            { "icon": "phone", "value": "08666777888" }, 
+            { "icon": "envelope", "value": "noah@example.com" }
+        ],
+        "grade": "VII A"
+    },
+    {
+        "name": "Isabella Kim", 
+        "id": "#234567891", 
+        "date": "January 15, 2021", 
+        "parent": "Min-Jun Kim",
+        "city": "Jakarta", 
+        "contact": [
+            { "icon": "phone", "value": "08777888999" }, 
+            { "icon": "envelope", "value": "isabella@example.com" }
+        ],
+        "grade": "VII B"
+    },
+    {
+        "name": "William Tan", 
+        "id": "#345678912", 
+        "date": "June 29, 2021", 
+        "parent": "Henry Tan",
+        "city": "Jakarta", 
+        "contact": [
+            { "icon": "phone", "value": "08888999000" }, 
+            { "icon": "envelope", "value": "william@example.com" }
+        ],
+        "grade": "VII C"
+    },
+    {
+        "name": "Mia Santos", 
+        "id": "#456789123", 
+        "date": "March 16, 2021", 
+        "parent": "Ricardo Santos",
+        "city": "Jakarta", 
+        "contact": [
+            { "icon": "phone", "value": "08999000111" }, 
+            { "icon": "envelope", "value": "mia@example.com" }
+        ],
+        "grade": "VII A"
+    },
+    {
+        "name": "Benjamin Singh", 
+        "id": "#567891234", 
+        "date": "April 03, 2021", 
+        "parent": "Priya Singh",
+        "city": "Jakarta", 
+        "contact": [
+            { "icon": "phone", "value": "08000111222" }, 
+            { "icon": "envelope", "value": "benjamin@example.com" }
+        ],
+        "grade": "VII B"
+    },
+    {
+        "name": "Charlotte Zhang", 
+        "id": "#678912345", 
+        "date": "February 22, 2021", 
+        "parent": "Wei Zhang",
+        "city": "Jakarta", 
+        "contact": [
+            { "icon": "phone", "value": "08111222333" }, 
+            { "icon": "envelope", "value": "charlotte@example.com" }
+        ],
+        "grade": "VII C"
+    },
+    {
+        "name": "Liam Nguyen", 
+        "id": "#789123456", 
+        "date": "May 27, 2021", 
+        "parent": "Thi Nguyen",
+        "city": "Jakarta", 
+        "contact": [
+            { "icon": "phone", "value": "08222333444" }, 
+            { "icon": "envelope", "value": "liam@example.com" }
+        ],
+        "grade": "VII A"
+    },
+    {
+        "name": "Amelia Gupta", 
+        "id": "#891234567", 
+        "date": "January 04, 2021", 
+        "parent": "Vikram Gupta",
+        "city": "Jakarta", 
+        "contact": [
+            { "icon": "phone", "value": "08333444555" }, 
+            { "icon": "envelope", "value": "amelia@example.com" }
+        ],
+        "grade": "VII B"
+    },
+    {
+        "name": "James Wong", 
+        "id": "#912345678", 
+        "date": "June 08, 2021", 
+        "parent": "Michelle Wong",
+        "city": "Jakarta", 
+        "contact": [
+            { "icon": "phone", "value": "08444555666" }, 
+            { "icon": "envelope", "value": "james@example.com" }
+        ],
+        "grade": "VII C"
+    },
+    {
+        "name": "Lily Sharma", 
+        "id": "#123456790", 
+        "date": "March 30, 2021", 
+        "parent": "Rahul Sharma",
+        "city": "Jakarta", 
+        "contact": [
+            { "icon": "phone", "value": "08555666777" }, 
+            { "icon": "envelope", "value": "lily@example.com" }
+        ],
+        "grade": "VII A"
+    },
+    {
+        "name": "Alexander Wang", 
+        "id": "#234567901", 
+        "date": "April 17, 2021", 
+        "parent": "Li Wang",
+        "city": "Jakarta", 
+        "contact": [
+            { "icon": "phone", "value": "08666777888" }, 
+            { "icon": "envelope", "value": "alexander@example.com" }
+        ],
+        "grade": "VII B"
+    },
+    {
+        "name": "Sofia Martinez", 
+        "id": "#345678902", 
+        "date": "February 14, 2021", 
+        "parent": "Carlos Martinez",
+        "city": "Jakarta", 
+        "contact": [
+            { "icon": "phone", "value": "08777888999" }, 
+            { "icon": "envelope", "value": "sofia@example.com" }
+        ],
+        "grade": "VII C"
+    }
+]
