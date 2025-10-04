@@ -1,16 +1,29 @@
 import { AcademicCapIcon, CurrencyDollarIcon, HomeIcon, UserGroupIcon, UserIcon, UserPlusIcon } from '@heroicons/react/24/outline'
-import { createContext, useState, useContext } from 'react';
+import React, { createContext, useState, useContext } from 'react';
+import { Link } from 'react-router-dom';
 
-const menuItems = [
-    { icon: <HomeIcon className="size-6" />, name: "Dashboard", href: "#", current: false },
-    { icon: <AcademicCapIcon className="size-6" />, name: "Students", href: "#", current: true },
-    { icon: <UserPlusIcon className="size-6" />, name: "Add Student", href: "#", current: false },
-    { icon: <UserGroupIcon className="size-6" />, name: "Teachers", href: "#", current: false },
-    { icon: <CurrencyDollarIcon className="size-6" />, name: "Finance", href: "#", current: false },
-    { icon: <UserIcon className="size-6" />, name: "User", href: "#", current: false },
+interface MenuItemType {
+    icon: React.ReactElement;
+    name: string;
+    href: string;
+    current: boolean;
+}
+
+export const menuItems: MenuItemType[] = [
+    { icon: <HomeIcon className="size-6" />, name: "Dashboard", href: "/", current: false },
+    { icon: <AcademicCapIcon className="size-6" />, name: "Students", href: "/students", current: true },
+    { icon: <UserPlusIcon className="size-6" />, name: "Add Student", href: "/add-student", current: false },
+    { icon: <UserGroupIcon className="size-6" />, name: "Teachers", href: "/teachers", current: false },
+    { icon: <CurrencyDollarIcon className="size-6" />, name: "Finance", href: "/finance", current: false },
+    { icon: <UserIcon className="size-6" />, name: "User", href: "/user", current: false },
 ];
 
-const MenuContext = createContext({
+type MenuContextType = {
+    selectedItem: MenuItemType;
+    setSelectedItem: (item: MenuItemType) => void;
+};
+
+const MenuContext = createContext<MenuContextType>({
     selectedItem: menuItems.find(item => item.current) || menuItems[0],
     setSelectedItem: () => { }
 });
@@ -19,13 +32,16 @@ export function useMenu() {
     return useContext(MenuContext);
 }
 
-export function MenuProvider({ children }) {
-    const [selectedItem, setSelectedItem] = useState(() => {
+export function MenuProvider({ children }: { children: React.ReactNode }) {
+    const [selectedItem, setSelectedItem] = useState<MenuItemType>(() => {
         return menuItems.find(item => item.current) || menuItems[0];
     });
 
     return (
-        <MenuContext.Provider value={{ selectedItem, setSelectedItem }}>
+        <MenuContext.Provider value={{ 
+            selectedItem, 
+            setSelectedItem: (item: MenuItemType) => setSelectedItem(item) 
+        }}>
             {children}
         </MenuContext.Provider>
     );
@@ -35,7 +51,7 @@ export function SideBar() {
     const [menuState, setMenuState] = useState(menuItems);
     const { selectedItem, setSelectedItem } = useMenu();
 
-    const handleMenuItemClick = (clickedItem) => {
+    const handleMenuItemClick = (clickedItem: MenuItemType) => {
         const updatedMenu = menuState.map(item => ({
             ...item,
             current: item.name === clickedItem.name
@@ -64,10 +80,10 @@ export function SideBar() {
                                 ${item.current ? "bg-[#f3f4ff] text-[#4d44b5]" : "bg-[#4d44b5] text-[#c1bbeb]"} 
                                 cursor-pointer`}
                             onClick={() => handleMenuItemClick(item)}>
-                            <a href={item.href} className="flex items-center gap-2 text-sm">
+                            <Link to={item.href} className="flex items-center gap-2 text-sm w-full">
                                 {item.icon}
                                 {item.name}
-                            </a>
+                            </Link>
                         </li>
                     ))}
                 </ul>
