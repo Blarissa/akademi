@@ -1,6 +1,6 @@
 import { AcademicCapIcon, CurrencyDollarIcon, HomeIcon, UserGroupIcon, UserIcon, UserPlusIcon } from '@heroicons/react/24/outline'
-import React, { createContext, useState, useContext } from 'react';
-import { Link } from 'react-router-dom';
+import React, { createContext, useState, useContext, use } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 
 interface MenuItemType {
     icon: React.ReactElement;
@@ -59,12 +59,14 @@ export function SideBar() {
 
         setMenuState(updatedMenu);
         setSelectedItem(clickedItem);
+        const navigate = useNavigate();
+        navigate(clickedItem.href);
     };
 
     return (
         <aside className="w-70 bg-[#4d44b5] text-white py-8 pl-8 font-sans">
             <div className="flex flex-row items-center gap-2 font-bold text-2xl text-white select-none">
-                <span className="flex flex-1 items-center justify-center rounded-xl bg-[#f97316] w-fit h-fit p-1">
+                <span className="flex flex-1 items-center justify-center rounded-xl bg-[#f97316] p-1">
                     A
                 </span>
                 <h2 className="flex-4 p-2">Akademi</h2>
