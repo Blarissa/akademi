@@ -16,6 +16,14 @@ export default [
       { 
         path: "add-student", 
         file: "components/add-student.tsx"
+      },
+      {
+        path: "page-not-found",
+        file: "components/page-not-found.tsx"
+      },
+      {
+        path: "*",
+        file: "components/page-not-found.tsx"
       }
     ]
   }
