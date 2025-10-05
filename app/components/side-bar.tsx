@@ -66,7 +66,7 @@ export function SideBar() {
     return (
         <aside className="w-70 bg-[#4d44b5] text-white py-8 pl-8 font-sans">
             <div className="flex flex-row items-center gap-2 font-bold text-2xl text-white select-none">
-                <span className="flex flex-1 items-center justify-center rounded-xl bg-[#f97316] p-1">
+                <span className="flex items-center justify-center w-10 h-10 rounded-lg bg-[#f97316]">
                     A
                 </span>
                 <h2 className="flex-4 p-2">Akademi</h2>
