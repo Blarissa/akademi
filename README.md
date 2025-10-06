@@ -31,12 +31,14 @@ Plataforma web para gerenciamento de alunos em ambiente escolar, com funcionalid
 ### Para executar localmente
 
 ```bash
-# Instalar dependências
+# Instalar dependências (recomendamos usar npm, não yarn)
 npm install
 
 # Iniciar servidor de desenvolvimento
 npm run dev
 ```
+
+⚠️ **Importante:** Use npm em vez de yarn para evitar problemas de compatibilidade com o módulo `@tailwindcss/oxide`.
 
 O aplicativo estará disponível em `http://localhost:5173`.
 
@@ -104,6 +106,23 @@ npm install react-router react-router-dom --save --force
 }
 ```
 
+- **Erro de arquitetura com @tailwindcss/oxide**: Se encontrar o erro `The CPU architecture "x64" is incompatible with this module`, você tem algumas opções:
+
+```bash
+# Opção 1: Use npm em vez de yarn
+rm yarn.lock  # ou del yarn.lock no Windows
+npm cache clean --force
+npm install
+
+# Opção 2: Instale uma versão anterior do TailwindCSS
+npm uninstall tailwindcss @tailwindcss/vite
+npm install tailwindcss@3.3.5 postcss autoprefixer --save-dev
+
+# Atualize a configuração para TailwindCSS v3 se necessário
+```
+
+  > Este projeto usa TailwindCSS v4.1.13, que pode ter problemas de compatibilidade em algumas arquiteturas.
+
 ## 🚢 Deploy
 
 ### Estrutura de build
@@ -132,3 +151,4 @@ docker run -p 3000:3000 akademi
 ---
 
 Desenvolvido com ❤️ usando React e TailwindCSS.
+
