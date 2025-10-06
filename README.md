@@ -7,13 +7,13 @@ Pequeno app React (Vite) para gerenciamento de alunos — rotas com React Router
 - Instale dependências:
 
 ```cmd
-yarn install
+npm install
 ```
 
 - Inicie o servidor de desenvolvimento:
 
 ```cmd
-yarn.cmd dev
+npm run dev
 ```
 
 O servidor ficará disponível em `http://localhost:5173/` por padrão.
