@@ -21,10 +21,6 @@ export default [
         path: "page-not-found",
         file: "components/page-not-found.tsx"
       },
-      {
-        path: "*",
-        file: "components/page-not-found.tsx"
-      }
     ]
   }
 ] satisfies RouteConfig;
