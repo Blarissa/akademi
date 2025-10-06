@@ -115,7 +115,7 @@ export const RadioGroup: React.FC<RadioGroupProps> = ({
               value={option.value}
               checked={value === option.value}
               onChange={onChange}
-              className="form-radio border-2 border-[#303972]"
+              className="form-radio border-2 border-[#303972] text-black"
             />
             {option.label}
           </label>
@@ -151,7 +151,7 @@ export const BirthInfoField: React.FC<BirthInfoFieldProps> = ({
           placeholder="24 February 1997" 
           value={dateValue}
           onChange={onChange}
-          className="border-2 border-[#c1bbeb] rounded-sm p-1 w-full mt-2" 
+          className="border-2 border-[#c1bbeb] rounded-sm p-1 w-full mt-2 text-black" 
         />
         <input 
           name="placeOfBirth" 
@@ -159,7 +159,7 @@ export const BirthInfoField: React.FC<BirthInfoFieldProps> = ({
           placeholder="Jakarta" 
           value={placeValue}
           onChange={onChange}
-          className="border-2 border-[#c1bbeb] rounded-sm p-1 w-full mt-2"
+          className="border-2 border-[#c1bbeb] rounded-sm p-1 w-full mt-2 text-black"
         />
       </div>
       <ErrorMessage errors={dateErrors} />

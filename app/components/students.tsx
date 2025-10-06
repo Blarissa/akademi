@@ -206,15 +206,15 @@ export default function Students() {
                         <div className="grid grid-cols-2 gap-2 text-sm">
                             <div>
                                 <p className="text-gray-500">Date:</p>
-                                <p className="font-medium">{data.date}</p>
+                                <p className="font-medium text-[#303972]">{data.date}</p>
                             </div>
                             <div>
                                 <p className="text-gray-500">City:</p>
-                                <p className="font-medium">{data.city}</p>
+                                <p className="font-medium text-[#303972]">{data.city}</p>
                             </div>
                             <div>
                                 <p className="text-gray-500">Parent Name:</p>
-                                <p className="font-medium">{data.parent}</p>
+                                <p className="font-medium text-[#303972]">{data.parent}</p>
                             </div>
                             <div>
                                 <p className="text-gray-500">Contact:</p>
