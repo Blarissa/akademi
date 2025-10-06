@@ -1,87 +1,100 @@
-# Welcome to React Router!
+# Akademi - Sistema de Gerenciamento de Alunos
 
-A modern, production-ready template for building full-stack React applications using React Router.
+Plataforma web para gerenciamento de alunos em ambiente escolar, com funcionalidades para visualização e cadastro de estudantes.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/blarissa/akademi)
 
-## Features
+## 🚀 Funcionalidades
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+- � Listagem de alunos com paginação e filtros
+- ➕ Cadastro de novos alunos
+- 🔍 Filtros por data (mais novos/mais antigos)
+- � Design responsivo
+- 💾 Persistência de dados via localStorage
 
-## Getting Started
+## 🛠️ Tecnologias
 
-### Installation
+- ⚛️ React com TypeScript
+- 🧭 React Router v7
+- � TailwindCSS
+- 📦 Vite como bundler
+- 🦸‍♂️ Heroicons para ícones
 
-Install the dependencies:
+## 🏁 Iniciando o Projeto
+
+### Para executar no StackBlitz
+
+1. Clique no botão "Open in StackBlitz" acima
+2. O ambiente será configurado automaticamente
+3. O projeto será executado no navegador, pronto para teste
+
+### Para executar localmente
 
 ```bash
+# Instalar dependências
 npm install
-```
 
-### Development
-
-Start the development server with HMR:
-
-```bash
+# Iniciar servidor de desenvolvimento
 npm run dev
 ```
 
-Your application will be available at `http://localhost:5173`.
+O aplicativo estará disponível em `http://localhost:5173`.
 
-## Building for Production
-
-Create a production build:
+## 🔧 Construindo para produção
 
 ```bash
 npm run build
 ```
 
-## Deployment
+## ⚙️ Configuração no StackBlitz
 
-### Docker Deployment
+Para garantir que o projeto funcione corretamente no StackBlitz:
 
-To build and run using Docker:
+- Aguarde a inicialização completa do ambiente
+- Se necessário, use o terminal do StackBlitz para executar:
 
 ```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
+npm install
+npm run dev
 ```
 
-The containerized application can be deployed to any platform that supports Docker, including:
+- Se encontrar problemas com dependências, tente atualizar com:
 
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
+```bash
+npm update
 ```
+
+## 📝 Notas
+
+- Este projeto utiliza localStorage para persistência de dados
+- O sistema inclui validação completa de formulários
+- A interface segue o design fornecido no Figma
+
+## 🚢 Deploy
+
+### Estrutura de build
+
+Após executar `npm run build`, você terá a seguinte estrutura:
+
+```text
 ├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
+├── package-lock.json
 ├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
+│   ├── client/    # Recursos estáticos
+│   └── server/    # Código do lado do servidor
 ```
 
-## Styling
+### Docker (opcional)
 
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
+Para construir e executar usando Docker:
+
+```bash
+docker build -t akademi .
+
+# Executar o container
+docker run -p 3000:3000 akademi
+```
 
 ---
 
-Built with ❤️ using React Router.
+Desenvolvido com ❤️ usando React e TailwindCSS.
