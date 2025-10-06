@@ -29,7 +29,7 @@ export const InputField: React.FC<InputFieldProps> = ({
         placeholder={placeholder}
         value={value}
         onChange={onChange}
-        className="border-2 border-[#c1bbeb] rounded-sm p-1 w-full mt-2"
+        className="border-2 border-[#c1bbeb] rounded-sm p-1 w-full mt-2 text-black"
       />
       <ErrorMessage errors={errors} />
     </div>
@@ -74,7 +74,7 @@ export const TextAreaField: React.FC<TextAreaFieldProps> = ({
         placeholder={placeholder}
         value={value}
         onChange={handleChange}
-        className="border-2 border-[#c1bbeb] rounded-sm p-1 w-full mt-2"
+        className="border-2 border-[#c1bbeb] rounded-sm p-1 w-full mt-2 text-black"
         rows={rows}
         maxLength={maxLength}
       />
@@ -159,7 +159,7 @@ export const BirthInfoField: React.FC<BirthInfoFieldProps> = ({
           placeholder="Jakarta" 
           value={placeValue}
           onChange={onChange}
-          className="border-2 border-[#c1bbeb] rounded-sm p-1 w-full mt-2" 
+          className="border-2 border-[#c1bbeb] rounded-sm p-1 w-full mt-2"
         />
       </div>
       <ErrorMessage errors={dateErrors} />
