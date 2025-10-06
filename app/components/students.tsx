@@ -1,7 +1,7 @@
 import { EnvelopeIcon, PhoneIcon, ChevronLeftIcon, ChevronRightIcon, ChevronDownIcon, PlusIcon } from '@heroicons/react/24/outline';
 import { useMenu } from './side-bar';
-import { useState, useMemo } from 'react';
-import alunos from '../../data/alunos.json';
+import { useState, useMemo, useEffect } from 'react';
+import alunosData from '../../data/alunos.json';
 import { Link } from 'react-router-dom';
 
 export default function Students() {
@@ -9,6 +9,14 @@ export default function Students() {
     const headerTable = ['Name', 'ID', 'Date', 'Parent Name', 'City', 'Contact', 'Grade'];
 
     const [sortOrder, setSortOrder] = useState('newest');
+    const [alunos, setAlunos] = useState(alunosData);
+    
+    useEffect(() => {
+        const storedAlunos = localStorage.getItem('alunos');
+        if (storedAlunos) {
+            setAlunos(JSON.parse(storedAlunos));
+        }
+    }, []);
 
     const processedAlunos = useMemo(() => {
         return alunos.map((aluno) => ({
@@ -145,7 +153,6 @@ export default function Students() {
                                                 pageToShow = totalPages - 4 + i;
                                             else
                                                 pageToShow = currentPage - 2 + i;
-
 
                                             return (
                                                 <button
